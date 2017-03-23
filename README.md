@@ -27,7 +27,7 @@ https://data.cityofnewyork.us/City-Government/NYC-Street-Centerline-CSCL-/exjm-f
 %matplotlib inline
 ```
 
-# loading base modules 
+## loading base modules 
 
 
 ```python
@@ -39,7 +39,7 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = [10,10]
 ```
 
-# loading the datasets (takes a while to load at the first time..)
+## loading the datasets (takes a while to load at the first time..)
 
 
 ```python
@@ -51,7 +51,7 @@ streets = gpd.read_file('data/cscl/geo_export_7db5438d-c515-499f-9d51-39f981ba85
 trees = gpd.read_file('data/trees/geo_export_f822eeee-0176-4586-ada0-7a06ce492b84.shp', driver='ESRI Shapefile')
 ```
 
-# converting CRS to UTM ( "flat" the maps, thus spatial queries get much easier)
+## converting CRS to UTM ( "flat" the maps, thus spatial queries get much easier)
 
 
 ```python
@@ -59,13 +59,19 @@ villagesdf = villagesdf.to_crs(epsg=26918)
 streets = streets.to_crs(epsg=26918)
 trees = trees.to_crs(epsg=26918)
 
+```
+
+## let's constraint our working data to Manhattan only
+
+
+```python
 villagesmn = villagesdf[villagesdf.BoroCode==1]
 streetsmn = streets[streets.borocode=='1']
 treesmn = trees[trees.borocode=='1']
 ```
 
-# plotting trees and streets in MN borough 
-## as a example, we sample the entire dataset thus the plot runs faster for now
+## plotting trees and streets in MN borough 
+### as an example, let's quick sample the entire datasets thus the plot runs faster for now
 
 
 ```python
@@ -84,7 +90,7 @@ streetsmn.sample(100).plot(ax=ax)
 
 
 
-![png](output_10_1.png)
+![png](output_12_1.png)
 
 
 ## let's aggregate the number of trees by neighbourhoods
