@@ -70,7 +70,7 @@ streetsmn = streets[streets.borocode=='1']
 treesmn = trees[trees.borocode=='1']
 ```
 
-## plotting trees and streets in MN borough 
+
 ### as an example, let's quick sample the entire datasets thus the plot runs faster for now
 
 
@@ -92,6 +92,7 @@ streetsmn.sample(100).plot(ax=ax)
 
 ![png](output_10_1.png)
 
+# plotting trees and streets in MN borough 
 
 ## let's aggregate the number of trees by neighbourhoods
 
