@@ -18,7 +18,7 @@ streets base lines:
 https://data.cityofnewyork.us/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/data
 
 
-# some tricks to make it easier to reload the modules while coding
+## some tricks to make it easier to reload the modules while coding
 
 
 ```python
@@ -90,7 +90,7 @@ streetsmn.sample(100).plot(ax=ax)
 
 
 
-![png](output_12_1.png)
+![png](output_10_1.png)
 
 
 ## let's aggregate the number of trees by neighbourhoods
