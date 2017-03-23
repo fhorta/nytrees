@@ -1,7 +1,7 @@
 
 #  let's make sure you've got the datasets
 
-herem we are basically dealing with shapefiles (.shp). It helps us a lot to load geometry data since data is stored with spatial index and divided in multiple files. We dont need to know what it exactly is, but you can check it out later:
+here we are basically dealing with shapefiles (.shp). It helps us a lot to load geometry data since data is stored with spatial index and divided in multiple files. We dont need to know what it exactly is, but you can check it out later:
 
 https://en.wikipedia.org/wiki/Shapefile
 
