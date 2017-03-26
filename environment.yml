@@ -195,6 +195,8 @@ dependencies:
   - pandas==0.19.2
   - prompt-toolkit==1.0.13
   - pyproj==1.9.5.1
+  - pysal==1.13.0
+  - scipy==0.19.0
   - shapely==1.5.17.post1
 prefix: !!python/unicode '/home/fhorta/anaconda2/envs/bia'
 
